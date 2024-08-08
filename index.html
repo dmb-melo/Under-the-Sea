@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Under the Sea</title>
+    <link rel="icon" type="image/x-icon" href="./img/1.Sharkie/1.IDLE/1.png">
+    <!--style-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/fonts.css">
+    <!-- js -->
+    <script src="js/functions.js"></script>
+    <script src="js/models/drawable-object.class.js"></script>
+    <script src="js/models/movable-object.class.js"></script>
+    <script src="js/models/character.class.js"></script>
+    <script src="js/models/jellyFish.class.js"></script>
+    <script src="js/models/pufferFish.class.js"></script>
+    <script src="js/models/finalEnemy.class.js"></script>    
+    <script src="js/models/status-bar-life.class.js"></script>
+    <script src="js/models/status-bar-coin.class.js"></script>
+    <script src="js/models/status-bar-poison.class.js"></script>
+    <script src="js/models/coin.class.js"></script>
+    <script src="js/models/poison.class.js"></script>
+    <script src="js/models/screen-win.class.js"></script>    
+    <script src="js/models/screen-lose.class.js"></script>  
+    <script src="js/models/screen-start.class.js"></script>  
+    <script src="js/models/background-object.class.js"></script> 
+    <script src="js/models/keyboard.class.js"></script>
+    <script src="js/models/throw-bubble.class.js"></script>
+    <script src="js/models/throw-poison-bubble.class.js"></script>    
+    <script src="js/models/level.class.js"></script> 
+    <script src="levels/level1.js"></script>
+    <script src="js/game.js"></script>
+ 
+    <script src="js/models/world.class.js"></script>
+  <!-- <script>
+    window.onload = function() {
+    init(coinPercentage);
+};
+  </script> -->
+        
+</head>
+<body onload="init()">
+    
+    <canvas class="canvas" id="canvas" width="720" height="480"></canvas>
+
+    <div class="title">
+        <h1>Under The Sea</h1>
+      </div>
+
+        <video class ="video" autoplay muted loop id="myVideo">       
+            <!-- <source src="video/125220-732837310_small.mp4" type="video/mp4">   -->
+            <source src="video/105322-670051114_small.mp4" type="video/mp4">     
+          </video>    
+
+        <div class ="start-screen" id="startScreen">
+            <div class ="start-background">
+              
+                <img class="start-img" src="img/3. Background/Mesa de trabajo 1.png" alt="">
+            </div>
+            <div class="start-buttom" onclick="explainScreen()">
+                <img src="img/6.Botones/Start/2.png" alt="">
+            </div>
+        </div> 
+
+        <div class="explain-screen"  id="explainScreen">
+            <div class="explain-icons">
+                <div class="arrows-container">
+                <div class="arrows">
+                    <img class="arrows-img"  src="img/6.Botones/Key/arrow keys.png">
+                </div>
+        
+                    <div class="arrows-title">Move Sharkie</div>
+                </div>
+
+                <div class="keyD-container">
+                    <div class="keyD">
+                        <img  class="keyD-img"src="img/6.Botones/Key/D key.png">
+        
+                    </div>
+                
+                    <div class="keyD-title">Throw Poison<br> Bubbles</div>
+                </div>
+                <div class="keySpace-container">
+                    <div class="keySpace">
+                        <img class="keySpace-img" src="img/6.Botones/Key/Space Bar key.png">
+                    </div>
+                
+                    <div class="keySpace-title">Throw Bubbles</div>
+                </div>
+            </div>
+        </div>
+        <div class ="tryAgain-screen" id="tryAgainScreen">
+            <div class ="start-background">
+                <img class="start-img" src="img/3. Background/Mesa de trabajo 1.png" alt="">
+            </div>
+            <div class="tryAgain-buttom" onclick="tryAgainScreen()">
+                <img src="img/6.Botones/Try again/Recurso 17.png" alt="">
+            </div>
+        </div>      
+
+       
+        <!-- https://cdn.freesound.org/previews/555/555798_5479102-lq.mp3 sonund Positive Cartoon Loop
+
+ -->
+<!-- https://cdn.freesound.org/previews/573/573973_10962806-lq.mp3 tropical cruise -->
+
+</body>
+</html>

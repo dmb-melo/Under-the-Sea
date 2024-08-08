@@ -1,0 +1,183 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    height: 100vh; 
+    position: relative; 
+}
+
+
+.canvas {
+    background-color: black;
+}
+
+.start-screen{
+    width: 720px;
+    height: 480px;
+    position: absolute;
+}
+
+.title {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgb(83,26,130);
+    padding: 10px;
+    z-index: 1;
+    text-align: center; 
+    width: 100%; 
+    font-size: 35px;
+    box-sizing: border-box; 
+    font-family: 'Luckiest Guy';
+}
+
+.video{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1; 
+}
+
+.start-img{
+  flex-direction: column;
+  width: 720px;
+  height: 480px;
+  background-color:rgb(37,35,56);
+}
+
+.start-buttom{
+  position: absolute;
+  display: flex;
+  margin-left: 356px;
+  margin-top: -150px;
+  height: 90px;
+}
+
+.explain-screen{
+    display: none;
+    width: 720px;
+    height: 480px;
+    position: absolute;
+    background-color:white;
+}
+
+.explain-icons{
+    flex-direction: column;
+    width: 720px;
+    height: 480px;
+    background-color:rgb(37,35,56);
+}
+
+.arrows-container{
+    display: flex;
+    height: 180px;
+    width: 720px;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 15px;
+}
+
+.arrows{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 360px;
+}
+
+.arrows-img{
+    height: 160px;
+    width: 265px;
+}
+
+.arrows-title{
+    font-family: 'Luckiest Guy', sans-serif;
+    color: white;
+    font-size: 45px;
+    margin-left: 44px;
+    text-align: center;
+    display: flex;
+    width: 360px;
+}
+
+.keyD-container{
+    display: flex;
+    height: 140px;
+    width: 720px;
+    justify-content:space-evenly;
+    align-items: center;
+}
+
+.keyD{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 360px;
+    margin-top: 20px;
+}
+
+.keyD-img{
+    height: 80px;
+}
+
+.keyD-title{
+    font-family: 'Luckiest Guy', sans-serif;
+    color: white;
+    font-size: 45px;
+    margin-left: 44px;
+    text-align: center;
+    display: flex;
+    width: 360px;
+}
+
+.keySpace-container{
+    display: flex;
+    height: 160px;
+    width: 720px;
+    justify-content:space-evenly;
+    align-items: center;
+}
+
+.keySpace{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 360px;
+}
+
+.keySpace-img{
+   height: 80px;
+   width: 265px;
+   margin-right: 37px;
+}
+
+.keySpace-title{
+    font-family: 'Luckiest Guy', sans-serif;
+    color: white;
+    font-size: 45px;
+    margin-left: -25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 360px;
+}
+
+.tryAgain-screen{
+    display: none;
+    width: 720px;
+    height: 480px;
+    position: absolute;
+}
+
+.tryAgain-buttom{
+    position: absolute;
+    display: flex;
+    margin-left: 336px;
+    margin-top: -150px;
+    height: 81px;
+
+}
