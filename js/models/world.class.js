@@ -557,10 +557,10 @@ class World{
                 this.character.attackFinalEnemy(() => {
                     this.showWinningScreen();
                 });
-            }               
-        } else if (!this.character.isAlive() && showStartScreen() && showTryAgainScreen()) {
-            finalEnemy.reset();
-        }       
+            }      }         
+        // } else if (!this.character.isAlive() && showStartScreen() && showTryAgainScreen()) {
+        //     finalEnemy.reset();
+        // }       
     }
         
 }
