@@ -1,123 +1,25 @@
 class World{
 
-        /**
-     * The level of the game.
-     * @type {object}
-     */
+  
         level = level1;
-
-        /**
-         * The main character in the game.
-         * @type {Character}
-         */
         character = new Character();
-    
-        /**
-         * The final enemy in the game.
-         * @type {FinalEnemy}
-         */
         finalEnemy = new FinalEnemy();
-    
-        /**
-         * A coin object in the game.
-         * @type {Coin}
-         */
         coin = new Coin();
-    
-        /**
-         * A jellyfish enemy object in the game.
-         * @type {JellyFish}
-         */
         jellyFish = new JellyFish();
-    
-        /**
-         * A puffer fish enemy object in the game.
-         * @type {PufferFish}
-         */
         pufferFish = new PufferFish();
-    
-        /**
-         * The HTML canvas element used for rendering the game.
-         * @type {HTMLCanvasElement}
-         */
         canvas;
-    
-        /**
-         * The 2D rendering context for the canvas.
-         * @type {CanvasRenderingContext2D}
-         */
         ctx;
-    
-        /**
-         * The keyboard object used for handling user input.
-         * @type {object}
-         */
         keyboard;
-    
-        /**
-         * The current x-coordinate of the camera.
-         * @type {number}
-         */
         camera_x = 0;
-    
-        /**
-         * The status bar for displaying the amount of coins.
-         * @type {StatusBarCoin}
-         */
         statusBarCoin = new StatusBarCoin(coinPercentage);
-    
-        /**
-         * The status bar for displaying poison status.
-         * @type {StatusBarPoison}
-         */
         statusBarPoison = new StatusBarPoison();
-    
-        /**
-         * The status bar for displaying life status.
-         * @type {StatusBarLife}
-         */
         statusBarLife = new StatusBarLife();
-    
-        /**
-         * The screen displayed when the player wins the game.
-         * @type {ScreenWin}
-         */
         screenWin = new ScreenWin();
-    
-        /**
-         * The screen displayed when the player loses the game.
-         * @type {ScreenLose}
-         */
         screenLose = new ScreenLose();
-    
-        /**
-         * The screen displayed when the game starts.
-         * @type {ScreenStart}
-         */
         screenStart = new ScreenStart();
-    
-        /**
-         * An array of thrown bubbles.
-         * @type {ThrowBubble[]}
-         */
         throwBubble = [];
-    
-        /**
-         * An array of thrown poison bubbles.
-         * @type {ThrowPoisonBubble[]}
-         */
         throwPoisonBubble = [];
-    
-        /**
-         * An array of poison bubbles in the game.
-         * @type {PoisonBubble[]}
-         */
         poisonBubbles = [];
-    
-        /**
-         * An array of remaining enemies in the game.
-         * @type {Enemy[]}
-         */
         remainingEnemies = [];
 
 
